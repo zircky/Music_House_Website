@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Strunal</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg nav-color">
+    <div class="container-fluid">
+        <a class="logo" href="../page/catalog.html"><img src="../img/logo3.png" alt=""></a>
+        <a class="navbar-brand" href="../page/catalog.html">Strunal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+                <li class="nav-item"><a href="../page/about_us.html" class="nav-link">О нас</a></li>
+                <li class="nav-item"><a href="../page/catalog.html" class="nav-link">Каталог</a></li>
+                <li class="nav-item"><a href="../page/where_can_I_find_us.html" class="nav-link">Где нас найти?</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><img src="../fontawesome-free/svgs/solid/user.svg" class="cart"></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../page/authorization.html" title="Войти в аккаунт">Login</a></li>
+                        <li><a class="dropdown-item" href="../page/registration.html" title="Зарегистрироваться">Sing up</a></li>
+                        <li><a class="dropdown-item" href="../page/registration.html" title="Выйти из аккаунта">Выход</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                        <img src="../fontawesome-free/svgs/solid/cart-shopping.svg" class="cart"></a>
+                    <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header header--color-bag">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel" >Корзина</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td><img src="../img/Electric-guitar-Yamaha-RGX-121ZL.jpeg" alt="asd27"></td>
+                                            <td><a href="#">Электрогитара Yamaha RGX 121ZL</a></td>
+                                            <td>21241 ₽</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/YAMAHA-PSR-E273-Synthesizer.jpeg" alt="ceos5d"></td>
+                                            <td><a href="#">YAMAHA PSR-E273 Синтезатор</a></td>
+                                            <td>21990 ₽</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/Violin-Aileen-VG106M-3-4.jpeg" alt="awu"></td>
+                                            <td><a href="#">Скрипка 3/4 Aileen VG106M-3/4</a></td>
+                                            <td>13900 ₽</td>
+                                            <td>1</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="../fontawesome-free/svgs/solid/magnifying-glass.svg" class="cart"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="main-content">
+    <div class="container">
+        <div class="row ">
+            <div class="clearfix">
+                <img src="../img/2d5d0cc68ffe42f62dddcda05bf80304.jpeg" class="col-md-6 float-md-end mb-3 ms-md-3 w-250 h-250" alt="...">
+                <h1>О НАС</h1>
+                <p>
+                    ООО «Strunal» входит в группу компаний «Торговый Дом», которая работает на музыкальном рынке с 2012 года. Выстраивая добросовестные отношения со всеми партнерами, мы приобрели не только безупречную репутацию надежного поставщика, но и статус официального дистрибьютора более 140 брендов, официального представителя 1000 брендов! Среди множества представленных брендов, профессионалы могут узнать GEWA, OVATION, ROY BENSON, LATIN PERCUSSION и другие.
+                </p>
+            </div>
+        </div >
+    </div>
+</section>
+    <div class="container-fluid my-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner align-items-center">
+                <div class="carousel-item active">
+                    <img src="../img/152.jpg" class="d-block w-100 " alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/153.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/154.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

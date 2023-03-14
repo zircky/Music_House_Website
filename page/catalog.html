@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Music House</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg nav-color">
+    <div class="container-fluid">
+        <a class="logo" href="../index.html"><img src="../img/logo3.png" alt=""></a>
+        <a class="navbar-brand" href="../index.html">Strunal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 top-menu">
+                <li class="nav-item"><a href="../page/about_us.html" class="nav-link">О нас</a></li>
+                <li class="nav-item"><a href="../page/catalog.html" class="nav-link">Каталог</a></li>
+                <li class="nav-item"><a href="../page/where_can_I_find_us.html" class="nav-link">Где нас найти?</a></li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><img src="../fontawesome-free/svgs/solid/user.svg" class="cart"></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../page/authorization.html" title="Войти в аккаунт">Login</a></li>
+                        <li><a class="dropdown-item" href="../page/registration.html" title="Зарегистрироваться">Sing up</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-cart">
+                        <img src="../fontawesome-free/svgs/solid/cart-shopping.svg" class="cart"></a>
+                    <div class="modal fade" id="modal-cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header header--color-bag">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Корзина</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <td><img src="../img/Electric-guitar-Yamaha-RGX-121ZL.jpeg" alt="asd27"></td>
+                                            <td><a href="#">Электрогитара Yamaha RGX 121ZL</a></td>
+                                            <td>21241 ₽</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/YAMAHA-PSR-E273-Synthesizer.jpeg" alt="ceos5d"></td>
+                                            <td><a href="#">YAMAHA PSR-E273 Синтезатор</a></td>
+                                            <td>21990 ₽</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="../img/Violin-Aileen-VG106M-3-4.jpeg" alt="awu"></td>
+                                            <td><a href="#">Скрипка 3/4 Aileen VG106M-3/4</a></td>
+                                            <td>13900 ₽</td>
+                                            <td>1</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="../fontawesome-free/svgs/solid/magnifying-glass.svg" class="cart"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="main-content">
+
+    <div class="container">
+        <div class="row">
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">Показать все</button>
+                <button class="btn" onclick="filterSelection('strings')">Струнные</button>
+                <button class="btn" onclick="filterSelection('keyboards')">Клавишные</button>
+                <button class="btn" onclick="filterSelection('bowed')">Смычковые</button>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv strings">
+                    <div class="product-thumb">
+                        <a href="product/strings/Electric-guitar-Yamaha-RGX.html"><img
+                                src="../img/Electric-guitar-Yamaha-RGX-121ZL.jpeg" alt=""></a>
+                    </div>
+                    <div class="product-details" data-price="21241">
+                        <h4><a href="product/strings/Electric-guitar-Yamaha-RGX.html">Электрогитара Yamaha RGX 121ZL</a>
+                        </h4>
+                        <p>
+                            Серия RGX предлагает инструмент для достаточно агрессивного стиля игры. Утонченный гриф
+                            идеально удобен для гитаристов, а специально подобранные керамические хамбакеры передают
+                            мощный, чистый звук современной гитары. 22 лада дают практически безграничные возможности
+                            для импровизации.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                <small>21241 ₽</small>19990 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#" title="Добавить в карзину"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg" class="cart"></a>
+                                <a href="#" title="Добавить в избранное"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv strings">
+                    <div class="product-thumb">
+                        <a href="product/strings/Electroacoustic-YAMAHA-FSX315C.html"><img
+                                src="../img/Electroacoustic-YAMAHA-FSX315C.jpeg" alt="applestudio"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/strings/Electroacoustic-YAMAHA-FSX315C.html">Электроакустическая гитара YAMAHA FSX315C </a></h4>
+                        <p>
+                            Качественная электроакустическая гитара с системой звукоснимателей - доступная, с удобным
+                            грифом и приятным внешним видом. Гитара, которая подойдет как для домашних занятий, так и
+                            для выступлений на сцене.
+                            YAMAHA FSX315C имеет бустер средних частот и качественный точный тюнер. Глубина корпуса: 96
+                            - 116, Мензура: 634 мм, Верхняя дека: Ель, Задняя дека и обечайка: Меранти, Гриф: Нато или
+                            Махогон, Накладка грифа: Палисандр, Бридж: Палисандр, Порожек: 43 мм,
+                            Звукосниматели/темброблок: System68F, Цвет: Natural, Покрытие: Глянец.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                17990 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#" title="Добавить в карзину"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#" title="Добавить в избранное"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv strings">
+                    <div class="product-thumb">
+                        <a href="product/strings/Acoustic-guitar-Norman-039760.html"><img
+                                src="../img/Acoustic-guitar-Norman-039760-Expedition-Nat-SG.jpeg"
+                                alt="CanonEOS5D"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/strings/Acoustic-guitar-Norman-039760.html">Акустическая гитара Norman
+                            039760 Expedition Nat SG</a></h4>
+                        <p>
+                            039760 Expedition Nat SG Акустическая гитара, Norman
+                            Корпуса всех гитар серии Expedition изготовлены из высококачественной трехслойной фанеры
+                            канадской дикой вишни.
+                            Инструменты украшены гравировкой розетки и полуматовой отделкой.
+                            Форма корпуса: дредноут.
+                            Верхняя дека: дикая вишня.
+                            Задняя дека и обечайка: дикая вишня.
+                            Гриф: клен серебристый, радиус 406мм.
+                            Анкерный стержень двойного действия.
+                            Накладка грифа и бридж: палисандр.
+                            Порожки: Graphtech Tusq.
+                            Колковая механика: передаточное число 14:1.
+                            Цвет: натуральный.
+                            Отделка: полу-матовая.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                50580 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#" title="Добавить в карзину"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#" title="Добавить в избранное"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv bowed">
+                    <div class="product-thumb">
+                        <a href="product/bowed/Violin-Aileen-VG106M.html"><img
+                                src="../img/Violin-Aileen-VG106M-3-4.jpeg" alt="iMac27"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/bowed/Violin-Aileen-VG106M.html">Скрипка 3/4 Aileen VG106M-3/4</a></h4>
+                        <p>
+                            Aileen VG106M-3/4 - скрипка, размер 3/4
+                            -Верх из цельной ели, боковины и нижняя часть корпуса из цельного клёна
+                            -накладка на гриф и детали из твердой древисины.
+                            металлический подгрифик
+                            -Поставляется с кейсом и смычком в комплекте
+                            -Комплектация: скрипка, подбородник, подструнник, канифоль, ремень для кейса
+                            -Размер: 3/4
+                            -Цвет: натуральный древесный
+                            -Цвет кейса: чёрный снаружи, тёмно-синий внутри
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                13900 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#" title="Добавить в карзину"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#" title="Добавить в избранное"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv keyboards">
+                    <div class="product-thumb">
+                        <a href="product/keyboards/YAMAHA-PSR-E273-Synthesizer.html"><img
+                                src="../img/YAMAHA-PSR-E273-Synthesizer.jpeg" alt="appleWatchUltra"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/keyboards/YAMAHA-PSR-E273-Synthesizer.html">YAMAHA PSR-E273 Синтезатор</a>
+                        </h4>
+                        <p>
+                            YAMAHA PSR-E273 – это в равной мере и музыкальный, и обучающий инструмент, который включает
+                            фирменные тембры и стили Yamaha и современные обучающие функции, которые вдохновляют
+                            начинающих исполнителей на реализацию своего потенциала и проявление энтузиазма к обучению и
+                            игре. Различные развлекательные и обучающие функции PSR-E273 обеспечивают быстрое
+                            совершенствование навыков, делая весь процесс обучения, включая репетиции, настолько
+                            увлекательным, что ваши дети с удовольствием будут играть даже самостоятельно.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                21990 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv bowed">
+                    <div class="product-thumb">
+                        <a href="product/bowed/Violin-Stagg-VN.html"><img src="../img/Violin-Stagg-VN-1-4.jpeg"
+                                                                          alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/bowed/Violin-Stagg-VN.html">Скрипка Stagg VN-1/4</a></h4>
+                        <p>
+                            Нету описания
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                6990 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv bowed">
+                    <div class="product-thumb">
+                        <a href="product/bowed/Violin-Stagg-VL.html"><img src="../img/Violin-Stagg-VL-3-4.jpeg"
+                                                                          alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/bowed/Violin-Stagg-VL.html">Скрипка Stagg VL-3/4</a></h4>
+                        <p>
+                            Кленовая скрипка, традиционно изготовленная вручную квалифицированными мастерами. Создана из
+                            прочных, высококачественных материалов Верхняя дека: цельная ель Нижняя дека и обечайка:
+                            клен Гриф: клен Накладка: эбони Бридж: клен Струнодержатель: черный металлический с 4
+                            тюнерами Поставляется в мягком кейсе
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                6990 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv keyboards">
+                    <div class="product-thumb">
+                        <a href="product/keyboards/Samson-GRAPHITE-49.html"><img src="../img/Samson-GRAPHITE-49.jpeg"
+                                                                                 alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/keyboards/Samson-GRAPHITE-49.html">Samson GRAPHITE 49</a></h4>
+                        <p>
+                            Кленовая скрипка, традиционно изготовленная вручную квалифицированными мастерами. Создана из
+                            прочных, высококачественных материалов Верхняя дека: цельная ель Нижняя дека и обечайка:
+                            клен Гриф: клен Накладка: эбони Бридж: клен Струнодержатель: черный металлический с 4
+                            тюнерами Поставляется в мягком кейсе
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                25990 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv keyboards">
+                    <div class="product-thumb">
+                        <a href="product/keyboards/Roland-A-500PRO-Midi-Keyboard-49-Tasten.html"><img
+                                src="../img/Roland-A-500PRO-Midi-Keyboard-49-Tasten.jpeg"
+                                alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/keyboards/Roland-A-500PRO-Midi-Keyboard-49-Tasten.html">Roland A-500PRO -
+                            Midi Keyboard 49 Tasten</a></h4>
+                        <p>
+                            Features Roland A-500PRO
+                            49 anschlagdynamischen Tasten mit Channel Aftertouch
+                            8 beleuchtete, anschlagdynamische Pads mit Hold-Funktion
+                            9 Drehregler, 9 Fader und 13 Taster, alle programmierbar
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                21728 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv strings">
+                    <div class="product-thumb">
+                        <a href="product/strings/Electric-guitar-YAMAHA-PACIFICA-012-DBM.html"><img
+                                src="../img/Electric-guitar-YAMAHA-PACIFICA-012-DBM.jpeg"
+                                alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/strings/Electric-guitar-YAMAHA-PACIFICA-012-DBM.html">Электрогитара-YAMAHA-PACIFICA-012-DBM</a>
+                        </h4>
+                        <p>
+                            Yamaha Pacifica 012 Новая модель электрогитары для начинающих гитаристов Pacifica 012
+                            отличается сложными техническими характеристиками, тщательностью изготовления и доступной
+                            ценой.
+                            Разработанная на основе модели Pacifica 112, новая, еще более доступная по цене модель 012
+                            характеризуется аналогичными контурами корпуса, мощным хамбакером в бриджевой позиции и 2
+                            синглами, обеспечивающими чистое звучание. Гитара оснащена удобным грифом, 5-позиционным
+                            переключателем выбора звукоснимателей и тремоло типа Vintage.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                24700 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv bowed">
+                    <div class="product-thumb">
+                        <a href="product/bowed/STAGG-VNC-4-4-XHG-Violoncello.html"><img
+                                src="../img/STAGG-VNC-4-4-XHG-Violoncello.jpeg" alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/bowed/STAGG-VNC-4-4-XHG-Violoncello.html">STAGG VNC-4/4 XHG Виолончель</a>
+                        </h4>
+                        <p>
+                            STAGG VNC-4/4 XHG - виолончель размера 4/4 в комплекте со смычком, конифолью и мягким
+                            чехлом. Выполнена из прочных высококачественных материалов. Прекрасный выбор для начинающих
+                            музыкантов, учащихся музыкальных школ, училищ, колледжей и для гострольной деятельности.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                98930 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv keyboards">
+                    <div class="product-thumb">
+                        <a href="product/keyboards/Rockdale-RKK-61-Synthesizer.html"><img
+                                src="../img/Rockdale-RKK-61-Synthesizer.png" alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/keyboards/Rockdale-RKK-61-Synthesizer.html">Rockdale RKK-61 Cинтезатор</a>
+                        </h4>
+                        <p>
+                            отсутствует описание
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                20990 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv bowed">
+                    <div class="product-thumb">
+                        <a href="product/bowed/Strunal-16W-1-8-Violin.html"><img
+                                src="../img/Strunal-16W-1-8-Violin.jpeg" alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/bowed/Strunal-16W-1-8-Violin.html">Strunal 16W 1/8 Скрипка</a></h4>
+                        <p>
+                            размер: 1/8, комплектация: смычок
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                14433 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv strings">
+                    <div class="product-thumb">
+                        <a href="product/strings/Solista-SO-4010-N-guitar.html"><img
+                                src="../img/Solista-SO-4010-N-guitar.jpeg" alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/strings/Solista-SO-4010-N-guitar.html">Solista SO-4010 N гитара</a></h4>
+                        <p>
+                            Sоlistа – маpкa гитар в cамом доступнoм ценoвом сeгмeнте. Инструмeнты выполнeны в
+                            cтaндapтных формаx и рaзмерах. Такие гитаpы xоpошo пoдxoдят для любителeй активногo oтдыxа,
+                            туpиcтов или нoвичков, пытающиxcя освоить азы игpы нa гитарe.
+                            Beрxняя декa: липa (лaминат)
+                            Hижняя дeкa и обечaйкa: липа (лaминат)
+                            Форма корпуса: фолк 39″, крепление гифа на 14 ладу, с вырезом
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                7900 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv strings">
+                    <div class="product-thumb">
+                        <a href="product/strings/Solista-SO-4010-Acoustic-guitar-40.html"><img
+                                src="../img/Solista-SO-4010-Acoustic-guitar-40.jpeg" alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/strings/Solista-SO-4010-Acoustic-guitar-40.html">Solista SO-4010 BK Гитара
+                            акустическая 40</a></h4>
+                        <p>
+                            Акустические гитары Solista SO-4010 выполнены из качественного ламината, имеют высокую
+                            стабильность и выносливость. Они хорошо подходят тем, кто только начинает свой творческий
+                            путь или просто хочет приобрести качественную гитару по разумной цене.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                7770 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv keyboards">
+                    <div class="product-thumb">
+                        <a href="product/keyboards/AKAI-PRO-APC-KEY-25-USB-mini.html"><img
+                                src="../img/AKAI-PRO-APC-KEY-25-USB-mini.jpeg" alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/keyboards/AKAI-PRO-APC-KEY-25-USB-mini.html">AKAI PRO APC KEY 25 USB</a>
+                        </h4>
+                        <p>
+                            AKAI Professional APC KEY 25 – это профессиональная USB/MIDI-клавиатура с множеством
+                            дополнительных контроллеров, предназначенная специально для работы с секвенсором (DAW)
+                            Ableton Live. Она сочетает в себе глубокую интеграцию программного обеспечения и расширенные
+                            возможности работы: можно создавать мелодии, басовые линии и играть аккорды на 25 клавишах.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                12800 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv strings">
+                    <div class="product-thumb">
+                        <a href="product/strings/Harga-Spesifikasi-Yamaha-Gitar-Elektrik-Pacifica.html"><img
+                                src="../img/Harga-Spesifikasi-Yamaha-Gitar-Elektrik-Pacifica-112J.jpeg"
+                                alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/strings/Harga-Spesifikasi-Yamaha-Gitar-Elektrik-Pacifica.html">Harga
+                            Spesifikasi Yamaha Gitar Elektrik Pacifica 112J</a></h4>
+                        <p>
+                            Yamaha Gitar Elektrik PACIFICA 112J YNS ORIGINAL !!!Gitar listrik double cutaway. Nilai yang
+                            luar biasa. Nada Luar Biasa. Salah satu nilai gitar listrik terbaik selama lebih dari satu
+                            dekade, gitar Yamaha Pacifica terkenal dengan nada yang hebat dan kemampuan bermain yang
+                            luar biasa. Fitur: Seri Pacifica menampilkan bodi berkontur yang nyaman, desain leher dengan
+                            baut, vibrato gaya vintage, dan pengalihan 5-arah dari konfigurasi pickup H-S-S.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                16991 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg"
+                                                 class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-3">
+                <div class="product-card filterDiv keyboards">
+                    <div class="product-thumb">
+                        <a href="product/keyboards/Nektar-Impact-LX-61+MIDI-Keyboard.html"><img
+                                src="../img/Nektar-Impact-LX-61+MIDI-Keyboard.png"
+                                alt="applePolishingCloth"></a>
+                    </div>
+                    <div class="product-details">
+                        <h4><a href="product/keyboards/Nektar-Impact-LX-61+MIDI-Keyboard.html">Nektar Impact LX 61+
+                            MIDI-клавиатура</a></h4>
+                        <p>
+                            отсутствует описание.
+                        </p>
+                        <div class="product-bottom-details d-flex justify-content-between">
+                            <div class="product-price">
+                                17990 ₽
+                            </div>
+                            <div class="product-links">
+                                <a href=#"><img src="../fontawesome-free/svgs/solid/cart-shopping.svg" class="cart"></a>
+                                <a href="#"><img src="../fontawesome-free/svgs/solid/heart.svg" class="heart"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3-md-3 col-6">
+                    <h4>Информация</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О Магазине</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-3-md-3 col-6">
+                    <h4>Время работы</h4>
+                    <ul class="list-unstyled">
+                        <li>г. Пек, ул. Бла, 1</li>
+                        <li>пн-вс: 9:00 - 18:00</li>
+                        <li>Без перерыва</li>
+                    </ul>
+                </div>
+                <div class="col-3-md-3 col-6">
+                    <h4>Контакты</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:4641554215">464 155-42-15</a></li>
+                        <li><a href="tel:4641557510">464 155-75-10</a></li>
+                        <li><a href="tel:4641559070">464 155-90-70</a></li>
+                    </ul>
+                </div>
+                <div class="col-3-md-3 col-6">
+                    <h4>Мы в сети</h4>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/all.js"></script>
+</body>
+</html>

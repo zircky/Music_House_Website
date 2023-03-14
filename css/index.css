@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'EkMukta Regular';
+    font-weight: 400;
+    src: url('../fonts/EkMuktaRegular-mOLv.ttf') format("truetype");
+}
+@font-face {
+    font-family: "EkMukta Extra Light";
+    font-weight: 200;
+    src: url("../fonts/EkMuktaExtralight-vOmL.ttf");
+}
+@font-face {
+    font-family: "EkMukta Light";
+    font-weight: 300;
+    src: url("../fonts/EkMuktaLight-wO19.ttf");
+}
+@font-face {
+    font-family: "EkMukta Medium";
+    font-weight: 500;
+    src: url("../fonts/EkMuktaMedium-7vBD.ttf");
+}
+@font-face {
+    font-family: "EkMukta Semi Bold";
+    font-weight: 600;
+    src: url("../fonts/EkMuktaSemibold-dV97.ttf");
+}
+@font-face {
+    font-family: "EkMukta Bold";
+    font-weight: 700;
+    src: url("../fonts/EkMuktaBold-Kw7e.ttf");
+}
+@font-face {
+    font-family: "EkMukta Extra Bold";
+    font-weight: 800;
+    src: url("../fonts/EkMuktaExtrabold-2YOX.ttf");
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'EkMukta Regular', sans-serif;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    min-width: 320px;
+}
+.nav-color, .footer{
+    background-color: #d3d3d4;
+}
+.header--color-bag {
+    background-color: #6f7272;
+    color: #fff;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.logo img {
+    margin-left: 50px;
+    max-width: 20%;
+    height: auto;
+}
+.nav-color {
+    background: rgba(128, 128, 128, .5);
+}
+section {
+    padding: 50px 0;
+}
+.nav-item {
+    display: flex;
+}
+.header a {
+    font-family: 'EkMukta Regular', sans-serif;
+}
+a {
+    font-family: 'EkMukta Regular', sans-serif;
+    color: #111;
+}
+p {
+    font-family: 'EkMukta Regular', sans-serif;
+}
+a:hover {
+    color: #555;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'EkMukta Bold', sans-serif;
+    color: #111;
+
+    text-transform: uppercase;
+}
+.navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.top-menu li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #111;
+    height: 1px;
+    transition: all .3s;
+    transform: scale(0);
+}
+.top-menu li a:hover::after {
+    transform: scale(1);
+}
+
+.modal-body img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Carousel */
+.my-carousel {
+    padding: 0;
+}
+.my-carousel .carousel-item {
+    display: flex;
+    max-height: 500px;
+}
+.my-carousel .carousel-item img {
+    object-fit: cover;
+}
+/* Carousel */
+
+/*Product card*/
+.product-card {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06);
+    transition: all .3s;
+}
+.product-card:hover {
+    box-shadow: 0 14px 30px -15px rgba(0,0,0,0.75);
+}
+.product-thumb a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 20px;
+}
+.product-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-details {
+    padding: 20px;
+}
+.container {
+    overflow: hidden;
+}
+.filterDiv {
+    float: left;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06);
+
+    /*line-height: 100px;*/
+    /*text-align: center;*/
+    margin: 2px;
+    display: none;
+}
+.show {
+    display: block;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #F1F1F1;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #ddd;
+}
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+.product-details h4 a {
+    font-family: 'EkMukta Medium',sans-serif;
+    display: block;
+    height: 60px;
+    overflow: hidden;
+    text-decoration: none;
+}
+.product-details p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #999;
+    height: 44px;
+    overflow: hidden;
+}
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    position: relative;
+}
+.product-price {
+    font-family: 'EkMukta Semi Bold',sans-serif;
+    font-size: 18px;
+    color: #ee6e73;
+}
+.product-price small {
+    font-family: 'EkMukta Regular', sans-serif;
+    color: #606060;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+.product-links a {
+    font-size: 20px;
+    margin-left: 10px;
+}
+.cart {
+    width: 23px;
+    height: 21px;
+}
+.heart {
+    width: 20px;
+    height: 21px;
+}
+/*Product card*/
+
+/*Footer*/
+.footer h4 {
+    color: #150e0e;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 3px;
+}
+.footer a {
+    text-decoration: none;
+    transition: all .3s;
+}
+.footer a:hover {
+    color: #cc2d2d;
+    text-decoration: underline;
+}
+.footer a, .footer li {
+    color: #150e0e;
+}
+.footer li a {
+    display: block;
+}
+.footer-icons {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 20px;
+}
+/*Footer*/
+
+.results-container {
+    background-color: #ffddcc;
+}
